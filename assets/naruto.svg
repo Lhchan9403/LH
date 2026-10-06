@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+    <rect width="600" height="450" fill="#ed7836"/>
+    <rect x="24" y="24" width="552" height="402" rx="3" fill="none" stroke="#35231d" stroke-opacity=".3"/>
+    <g font-family="Arial, sans-serif" fill="#35231d">
+      <text x="48" y="60" font-size="13" font-weight="700" letter-spacing="3">KUJI COLLECTION</text>
+      <text x="552" y="60" text-anchor="end" font-size="12" letter-spacing="2">DEMO</text>
+    </g><circle cx="300" cy="218" r="125" fill="#ffdb70"/>
+      <g fill="none" stroke="#35231d" stroke-width="15" stroke-linecap="round">
+        <path d="M363 195c-13-58-115-58-131-3-20 65 83 94 105 48 19-40-43-59-48-24"/>
+        <path d="m232 234-36 51 63-13M351 172l34-43"/>
+      </g><path d="m110 292 30-30 16 16-30 30zm356-174 20-20 12 12-20 20z" fill="#35231d"/>
+    <g font-family="Arial, sans-serif" fill="#35231d" text-anchor="middle">
+      <text x="300" y="370" font-size="34" font-weight="900" letter-spacing="1">NARUTO</text>
+      <text x="300" y="399" font-size="13" font-weight="700" letter-spacing="4">HIDDEN LEAF</text>
+    </g>
+  </svg>

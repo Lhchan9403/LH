@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICHIBAN KUJI · Kuji Club — Pick a ticket. Reveal your prize.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Nunito:wght@400;600;700;800;900&family=Zen+Maru+Gothic:wght@700;900&family=Shippori+Mincho+B1:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= KIOSK TOP BAR ================= -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark">◆</span>
+      <span class="brand-text">ICHIBAN KUJI<em>KUJI CLUB</em></span>
+    </a>
+    <div class="top-actions">
+      <button class="hud-btn" id="themeBtn" onclick="toggleTheme()" title="Switch style">📖</button>
+      <button class="points-chip" onclick="go('#/wallet')" aria-label="My points">
+        <span class="pt-star">★</span><span id="pointsVal">0</span>
+      </button>
+      <button class="hud-btn" onclick="openMenu()" aria-label="Menu">☰</button>
+      <button class="hud-btn" onclick="openSettings()" aria-label="Settings">⚙</button>
+    </div>
+  </div>
+</header>
+
+<div class="bg-kanji" aria-hidden="true">賞</div>
+<div class="castle-waves" aria-hidden="true">
+  <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+    <path class="w1" d="M0,130 C240,70 480,190 720,130 C960,70 1200,190 1440,130 L1440,220 L0,220 Z"/>
+    <path class="w2" d="M0,150 C260,100 520,200 780,150 C1040,100 1240,195 1440,150 L1440,220 L0,220 Z"/>
+    <path class="w3" d="M0,175 C300,140 540,210 820,175 C1100,140 1260,205 1440,175 L1440,220 L0,220 Z"/>
+    <path class="w-foam" d="M0,130 C240,70 480,190 720,130 C960,70 1200,190 1440,130"/>
+    <path class="w-foam f2" d="M0,150 C260,100 520,200 780,150 C1040,100 1240,195 1440,150"/>
+  </svg>
+</div>
+<main id="view"></main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="foot-inner">
+    <span class="brand-mark sm">◆</span>
+    <p>KUJIGACHA · KUJI CLUB — demo redesign concept · Data snapshot from live environment · SGD</p>
+    <button class="foot-link" onclick="resetDemo()">Reset demo data</button>
+  </div>
+</footer>
+
+<!-- ================= BOTTOM NAV (app) ================= -->
+<nav class="bottomnav" aria-label="App">
+  <button class="bnav active" data-nav="home" onclick="go('#/')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span>
+  </button>
+  <button class="bnav" data-nav="gacha" onclick="go('#/gacha')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="9" r="6"/><path d="M5 21h14M7 15v6M17 15v6"/></svg><span>Gacha</span>
+  </button>
+  <button class="bnav" data-nav="wallet" onclick="go('#/wallet')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M16 12h5v4h-5a2 2 0 0 1 0-4z"/></svg><span>Wallet</span>
+    <i class="dot-badge" id="walletDot"></i>
+  </button>
+</nav>
+
+<!-- ================= MODALS / FX ================= -->
+<div class="overlay" id="overlay" onclick="onOverlay()"></div>
+<aside class="menu-drawer" id="menuDrawer" aria-label="Menu">
+  <div class="md-head">
+    <span class="brand-mark">◆</span>
+    <b>MENU</b>
+    <button class="m-close" onclick="closeModal()" aria-label="Close menu">✕</button>
+  </div>
+  <nav class="md-list">
+    <button class="md-item" onclick="go('#/');closeModal()"><span>🏠</span>Home · Live Boxes</button>
+    <button class="md-item" onclick="go('#/gacha');closeModal()"><span>◉</span>Gacha Machines</button>
+    <button class="md-item" onclick="go('#/wallet');closeModal()"><span>🎫</span>My Wallet</button>
+    <button class="md-item" onclick="howToPlay()"><span>❓</span>How to Play</button>
+    <button class="md-item" onclick="openSettings()"><span>⚙️</span>Settings</button>
+    <button class="md-item danger" onclick="resetDemo();closeModal()"><span>🔄</span>Reset demo data</button>
+  </nav>
+  <div class="md-foot">KUJIGACHA · KUJI CLUB<br><span>無限城 Edition · v1.0</span></div>
+</aside>
+<div class="modal-stage" id="modalStage"></div>
+<canvas id="confetti"></canvas>
+<canvas id="fx"></canvas>
+<div class="kfx" id="kfx"></div>
+<div class="toasts" id="toasts"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

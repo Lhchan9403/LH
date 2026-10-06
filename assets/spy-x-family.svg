@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+    <rect width="600" height="450" fill="#e7b7be"/>
+    <rect x="24" y="24" width="552" height="402" rx="3" fill="none" stroke="#264940" stroke-opacity=".3"/>
+    <g font-family="Arial, sans-serif" fill="#264940">
+      <text x="48" y="60" font-size="13" font-weight="700" letter-spacing="3">KUJI COLLECTION</text>
+      <text x="552" y="60" text-anchor="end" font-size="12" letter-spacing="2">DEMO</text>
+    </g><g transform="rotate(-9 300 222)"><rect x="192" y="109" width="216" height="217" rx="9" fill="#fff0cc"/>
+      <path d="M219 142h91v8h-91zm0 17h60v5h-60zm0 127h162v5H219" fill="#264940"/>
+      <circle cx="269" cy="225" r="28" fill="none" stroke="#264940" stroke-width="8"/>
+      <circle cx="339" cy="225" r="28" fill="none" stroke="#264940" stroke-width="8"/>
+      <path d="M297 225h15m-72 0h-19m147 0h16" stroke="#264940" stroke-width="8"/>
+      <path d="m355 139 6 14 15 1-12 10 4 15-13-9-13 9 4-15-12-10 15-1z" fill="#bb6478"/></g>
+    <g font-family="Arial, sans-serif" fill="#264940" text-anchor="middle">
+      <text x="300" y="370" font-size="34" font-weight="900" letter-spacing="1">SPY × FAMILY</text>
+      <text x="300" y="399" font-size="13" font-weight="700" letter-spacing="4">SECRET MISSION</text>
+    </g>
+  </svg>

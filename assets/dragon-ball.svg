@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+    <rect width="600" height="450" fill="#3283b5"/>
+    <rect x="24" y="24" width="552" height="402" rx="3" fill="none" stroke="#112f49" stroke-opacity=".3"/>
+    <g font-family="Arial, sans-serif" fill="#112f49">
+      <text x="48" y="60" font-size="13" font-weight="700" letter-spacing="3">KUJI COLLECTION</text>
+      <text x="552" y="60" text-anchor="end" font-size="12" letter-spacing="2">DEMO</text>
+    </g><path d="m300 73 29 97 96-51-60 94 116 14-112 35 71 74-103-33-37 51-31-66-96 26 61-74-95-42 120-5-42-90 66 51z" fill="#fff0ad"/>
+      <circle cx="300" cy="221" r="91" fill="#ffad36" stroke="#112f49" stroke-width="5"/>
+      <g fill="#d64432"><path id="star" d="m281 176 7 16 18 2-14 12 4 18-15-10-15 10 4-18-14-12 18-2z"/>
+      <use href="#star" x="39"/><use href="#star" y="45"/><use href="#star" x="39" y="45"/></g>
+    <g font-family="Arial, sans-serif" fill="#112f49" text-anchor="middle">
+      <text x="300" y="370" font-size="34" font-weight="900" letter-spacing="1">DRAGON BALL</text>
+      <text x="300" y="399" font-size="13" font-weight="700" letter-spacing="4">SUPER SAIYANS</text>
+    </g>
+  </svg>

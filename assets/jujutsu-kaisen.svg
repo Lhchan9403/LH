@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+    <rect width="600" height="450" fill="#29213f"/>
+    <rect x="24" y="24" width="552" height="402" rx="3" fill="none" stroke="#eee6ff" stroke-opacity=".3"/>
+    <g font-family="Arial, sans-serif" fill="#eee6ff">
+      <text x="48" y="60" font-size="13" font-weight="700" letter-spacing="3">KUJI COLLECTION</text>
+      <text x="552" y="60" text-anchor="end" font-size="12" letter-spacing="2">DEMO</text>
+    </g><g fill="none" stroke="#b89aff"><ellipse cx="300" cy="220" rx="131" ry="77" stroke-width="9" transform="rotate(-28 300 220)"/>
+      <ellipse cx="300" cy="220" rx="131" ry="77" stroke-width="3" transform="rotate(32 300 220)"/>
+      <circle cx="300" cy="220" r="62" stroke-width="2"/></g>
+      <circle cx="300" cy="220" r="31" fill="#eee6ff"/>
+      <path d="m173 140 11 22 24 3-18 16 5 24-22-12-21 12 4-24-17-16 24-3zM391 299l20-12 6 24-19 14z" fill="#b89aff"/>
+    <g font-family="Arial, sans-serif" fill="#eee6ff" text-anchor="middle">
+      <text x="300" y="370" font-size="34" font-weight="900" letter-spacing="1">JUJUTSU KAISEN</text>
+      <text x="300" y="399" font-size="13" font-weight="700" letter-spacing="4">CURSED ENERGY</text>
+    </g>
+  </svg>
